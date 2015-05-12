@@ -7,6 +7,8 @@ Contains the PhantomJS scripts used and instructions on how to run it
 Contain the implementations of the test cases.
 
 ###Instructions
+clone repository
+
 run `node app.js`
 
 go to `http://localhost:3000//testcases.html` for an overview of the test cases
