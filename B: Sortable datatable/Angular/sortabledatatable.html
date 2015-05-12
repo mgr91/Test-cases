@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+	<title>Angular - sortable datatable</title>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+	<script type="text/javascript" src="sortabledatatable.js"></script>
+</head>
+<body>
+	<h1>Angular - sortable datatable</h1>
+	<div id="app-content" ng-app="listElementsApp" ng-controller="ListElementsCtrl" on-finish-render>	
+		<button ng-click="changeDataItems()">Change all items</button>
+		<button ng-click="changeRandomDataItem()">Change one random item</button>
+		<hr>
+		<div ng-repeat="element in elements| orderBy:['value','id']">
+			 {{element.id}} | {{element.value}} | {{element.name}}
+		</div>
+	</div>
+</body>
+</html>
+ 

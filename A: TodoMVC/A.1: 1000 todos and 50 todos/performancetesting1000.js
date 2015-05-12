@@ -61,7 +61,6 @@ page.onCallback = function() {
 
     console.log(length +" todo items checked", "--" + (Date.now()-time) + " ms");
 
-
     // Destroy all todos
     console.log("Destroying todos...");
      var length = page.evaluate(function() {
